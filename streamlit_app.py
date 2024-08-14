@@ -4,13 +4,10 @@ from snowflake.snowpark.functions import col
 
 # Write directly to the app
 st.title("My Parent's New Healthy Diner")
-st.write(
-    """Breakfast Menu
-    Omega 3 & Blueberry Oatmeal
-    Kale, Spinach & Rocket Smoothie
-    Hard-Boiled Free-Range Egg        
-    """
-)
+st.title("Breakfast Menu")
+st.write("""Omega 3 & Blueberry Oatmeal""")
+st.write("""Kale, Spinach & Rocket Smoothie""")
+st.write("""Hard-Boiled Free-Range Egg""")
 
 # Display the full Fruit Options List from loaded database
 # add .select(col('FRUIT_NAME')) to bring in only the 1 column
