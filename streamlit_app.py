@@ -3,11 +3,11 @@ import streamlit as st
 from snowflake.snowpark.functions import col
 
 # Write directly to the app
-st.title("My Parent's New Healthy Diner")
-st.title("Breakfast Menu")
-st.write("""Omega 3 & Blueberry Oatmeal""")
-st.write("""Kale, Spinach & Rocket Smoothie""")
-st.write("""Hard-Boiled Free-Range Egg""")
+st.title(":cup_with_straw: Customize Your Smoothie :cup_with_straw:")
+st.write(
+    """Choose the fruits you want in your custom Smoothie!
+    """
+)
 
 # Display the full Fruit Options List from loaded database
 # add .select(col('FRUIT_NAME')) to bring in only the 1 column
